@@ -1,0 +1,37 @@
+.App-main-screen-episode {
+    width: 100%;
+
+    margin-bottom: 5px;
+    padding-top: 5px;
+
+    overflow: hidden;
+}
+
+.App-main-screen-episode ul {
+    width: 80%;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+
+    column-gap: 2px;
+}
+
+.App-main-screen-episode ul img{
+    width: 100px;
+    height: 100px;
+}
+
+.App-main-screen-episode-location {
+    width: 110px;
+    border-radius: 10px;
+    background-color:rgb(245, 245, 129);
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

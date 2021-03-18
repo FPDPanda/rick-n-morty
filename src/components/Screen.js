@@ -3,6 +3,9 @@ import React, {useState, useEffect} from 'react'
 // CSS
 import '../styles/Screen.css'
 
+// Components
+import Episode from './Episode'
+
 function Screen() {
     let [data, setData] = useState([]);
     let [loading, setLoading] = useState(true);
@@ -25,6 +28,10 @@ function Screen() {
     } else {    
         return (
             <aside className="App-main-screen">
+                {data.map(episode =>
+                    <Episode episodeNumber={episode.episodeNumber} 
+                    episodeCharacters={episode.characters} 
+                    episodeLocations={episode.locations} />
                 )
                 }
             </aside>
