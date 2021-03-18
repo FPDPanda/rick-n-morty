@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import ApolloClient from 'apollo-boost';
+import {ApolloProvider} from 'react-apollo';
 
 // CSS
 import './App.css'
@@ -6,11 +8,18 @@ import './App.css'
 // Components
 import Main from './components/Main'
 
+// Apollo client setup
+const client = new ApolloClient({
+  uri: "https://rickandmortyapi.com/graphql"
+})
+
 function App() {
   return (
-    <div className="App">
-      <Main />
-    </div>
+    <ApolloProvider client={client}>
+      <div className="App">
+        <Main />
+      </div>
+    </ApolloProvider>
   );
 }
 
