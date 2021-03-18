@@ -28,7 +28,7 @@ function Buttons({data}) {
     return (
         <div className='App-main-buttons'>
             <button 
-            className="App-main-buttons-create"
+            id="App-main-buttons-create"
             onClick={createEpisode}>
                 New episode
             </button>

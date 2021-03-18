@@ -16,9 +16,9 @@ function Episode({episodeNumber, episodeLocations, episodeCharacters}) {
             style= {{height: openEpisode?'500px':'30px'}}
             className="App-main-screen-episode">
 
-            <div>Episode {episodeNumber}</div>
+            <div className="App-main-screen-episodeNumber">Episode {episodeNumber}</div>
 
-            <h2>Locations</h2>
+            <h2 className="App-main-screen-episodeTitles">Locations</h2>
 
             <ul>
                 {episodeLocations.map(location =>
@@ -26,7 +26,7 @@ function Episode({episodeNumber, episodeLocations, episodeCharacters}) {
                 )}
             </ul>
 
-            <h2>Characters</h2>
+            <h2 className="App-main-screen-episodeTitles">Characters</h2>
             <ul>
                 {episodeCharacters.map(character =>
                     <li>

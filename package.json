@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.3.12",
+    "@fontsource/covered-by-your-grace": "^4.2.2",
+    "@fontsource/exo": "^4.2.2",
+    "@fontsource/inknut-antiqua": "^4.2.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",

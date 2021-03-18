@@ -2,6 +2,11 @@ import React from 'react';
 import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from 'react-apollo';
 
+// Fonts
+import "@fontsource/inknut-antiqua"
+import "@fontsource/exo"
+import "@fontsource/covered-by-your-grace"
+
 // CSS
 import './App.css'
 
