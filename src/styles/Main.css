@@ -13,3 +13,9 @@
     border: 2px solid rgba(233, 253, 255, 0.8);
     border-radius: 10px;
 }
+
+@media screen and (max-width:900px) {
+    .App-main {
+        flex-direction: column;
+    }
+}
